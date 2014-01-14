@@ -1,0 +1,140 @@
+@font-color:#616161;
+@main-color:#3ab6ea;
+@background:#f2f3f7;
+html,body{
+	margin:0;
+	padding: 0;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: @font-color;
+}
+ul,li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	border: none;
+}
+h3{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: @font-color;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+* html .clearfix{
+ 	zoom: 1;
+} 
+*:first-child+html .clearfix { 
+	zoom: 1; 
+} 
+.page{
+	width: 980px;
+	margin: 0 auto;
+}
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+.fix{
+	position: fixed;
+}
+.text-center{
+	text-align: center;
+}
+.top-bar{
+	height: 100px;
+	width: 100%;
+	background: #fff;
+	z-index: 9999;
+	box-shadow: 1px 1px 6px #ADADAD;
+}
+.header{
+	a{
+		display: inline-block;
+		img{
+			margin-top: 15px;
+		}
+	}
+}
+.navagation{
+	margin-top: 40px;
+	ul>li{
+		float: left;
+	}
+	.navagator{
+		font-size: 1.25em;
+		margin-top: 2px;
+		li{
+			
+			margin-right:  5px;
+			a{
+				color: @font-color;
+				padding:  4px 15px;
+				&.active,&:hover {
+					background: darken(@main-color,8%);
+					border-radius: 3px;
+					color: #fff;
+				}
+			}
+		}	
+	}
+	.user-panel{
+		font-size: 1.15em;
+		margin-top: 4px;
+		width: 135px;
+		li{	
+			margin-left: 5px;
+			a{	
+				background:@main-color;
+				color: #fff;
+				padding: 4px 15px;
+				&:hover{
+					background:darken(@main-color,6%);
+				}
+			}
+		}
+		.login-in{
+			a,a:hover{
+				background: transparent;
+				padding: 4px 1px;
+				font-size: 0.9em;
+				color: darken(@main-color,10%);;
+				&.log-out,&.log-out:hover{
+					color: @font-color;
+				}
+			}
+			img{
+				margin-top: -8px;
+				width: 35px;
+				height: 35px;
+				border-radius: 50%;
+				border: 1px solid #17a0da;
+			}
+		}
+	}
+}
+/**
+nice-scroll
+**/
+.nicescroll-rails {
+	z-index: 9999 !important;
+	div{
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+		filter: alpha(opacity=50);
+		opacity: 0.5;
+		z-index: 99999;
+	}
+}

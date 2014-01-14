@@ -1,0 +1,118 @@
+@import "model/header.less";
+@import "model/footer.less";
+.menu{
+	padding-top: 100px;
+	height: 100px;
+	background: darken(@main-color,8%);
+	.page{
+		position: relative;
+	}
+	li{
+		width: 535px;
+		height: 100px;
+		line-height: 100px;
+		font-size: 2em;
+		color: #fff;
+		&.active{
+			background: #0078be;
+		}
+	}
+	span{
+		position: absolute;
+		color: #0078be;
+		top: 50px;
+		left: 250px;
+	}
+}
+.pc{
+	background: #f5f5f5;
+}
+.terminal,.pc{
+	height: 380px;
+	.down-load{
+		margin-top: 60px;
+		margin-left: 20px;
+	}
+	.title{
+		font-size: 1.9em;
+		line-height: 50px;
+	}
+	.name{
+		font-size: 1.8em;
+		line-height: 0.8;
+		margin-left: 20px;
+	}
+	.time{
+		font-size: 1.3em;
+		line-height: 0.8;
+		margin-left: 20px;
+	}
+	.link{
+		margin-top: 45px;
+		width: 610px;
+	}
+	p{
+		color: #0078be;
+	}
+	a{
+		width: 280px;
+		height: 95px;
+		line-height: 95px;
+		display: inline-block;
+		margin-right: 20px;
+		font-size: 2em;
+		color: #fff;
+		text-align: center;
+		position: relative;
+		&.windows{
+			background: @main-color;
+			&:hover{
+				background: darken(@main-color, 10%);
+			}
+			b{
+				background-position: 0 ;
+			}
+		}
+		&.mac{
+			background: #8c8c8f;
+			&:hover{
+				background: darken(#8c8c8f, 10%);
+			}
+			b{
+				background-position: 0 -43px;
+			}
+		}
+		&.android{
+			background: #7bb52b;
+			margin-top: 20px;
+			&:hover{
+				background: darken(#7bb52b, 10%);
+			}
+			b{
+				background-position: 0 -199px;
+			}
+		}
+		&.pad{
+			background: #813494;
+			margin-top: 20px;
+			&:hover{
+				background: darken(#813494, 10%);
+			}
+			b{
+				background-position: 0 -514px;
+			}
+		}
+		b{
+			position: absolute;
+			display: inline-block;
+			width: 82px;
+			height: 82px;
+			left: 20px;
+			top: 10px;
+			background: url(../images/logos.png);
+		}
+		span{
+			margin-left: 55px;
+		}
+	}
+}

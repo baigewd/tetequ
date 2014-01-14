@@ -1,0 +1,106 @@
+@import "model/header.less";
+@import "model/footer.less";
+@import "model/tooltips.less";
+.menu{
+	padding-top: 100px;
+	height: 100px;
+	background: darken(@main-color,8%);
+	.page{
+		position: relative;
+	}
+	li{
+		width: 535px;
+		height: 100px;
+		line-height: 100px;
+		font-size: 2em;
+		color: #fff;
+		&.active{
+			background: #0078be;
+		}
+	}
+	span{
+		position: absolute;
+		color: #0078be;
+		top: 50px;
+		left: 250px;
+	}
+}
+.apply{
+	form{
+		width: 535px;
+		padding-bottom: 20px;
+	}
+	h2{
+		color: #0078be;
+		margin: 20px 0;
+	}
+	.label{
+		height: 30px;
+		line-height: 30px;
+		font-size: 1.2em;
+		color:darken( @main-color, 25%);
+	}
+	.control-input{
+		height: 40px;
+		line-height: 40px;
+		background: #fff;
+		border: 1px solid #cfcfcf;
+		margin: 10px 0;
+		input{
+			width: 520px;
+			margin-top: 3px;
+			margin-left: 5px;
+			height: 25px;
+			border:none;
+			outline: none;
+			font-size: 1.2em;
+		}
+	}
+	.link-input{
+		border: none;
+		span{
+			font-size: 1em;
+		}
+		.domain{
+			font-size: 1.2em;
+		}
+		.s-input{
+			border: 1px solid #cfcfcf;
+			display: inline-block;
+			height: 40px;
+			width: 334px;
+			input{
+				width: 325px;
+			}
+		}
+	}
+	.control-submit{
+		input{
+			height: 60px;
+			width: 350px;
+			border-radius:3px ;
+			font-family: "微软雅黑";
+			cursor: pointer;
+			border: none;
+			font-size: 2em;
+			color: #fff;
+			margin-left: 70px;
+			background: @main-color;
+			&:hover{
+				background: darken(@main-color, 10%);
+			}
+		}
+	}
+	.control-checkbox{
+		height: 30px;
+		margin: 20px auto;
+		line-height: 30px;
+		a{
+			color: darken(@main-color, 10%);
+			&:hover{
+				color: darken(@main-color, 15%);
+				text-decoration: underline;
+			}
+		}
+	}
+}
